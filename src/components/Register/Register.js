@@ -41,7 +41,7 @@ export default function Register() {
       // console.log(user);
 
       // making a post request to our json-server
-      let res = await axios.post("http://localhost:5555/users", user);
+      let res = await axios.post("http://localhost:4000/user-api/register", user);
       setLoading(true);
 
       // console.log(res);

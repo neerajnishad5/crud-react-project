@@ -33,6 +33,11 @@ export default function User() {
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
 
+  const getUserById = async (id) => {
+    let res = await axios.get("http://localhost:4000/user-api/user/${id}");
+    return res.data;
+  };
+
   const {
     register,
     handleSubmit,
@@ -59,6 +64,8 @@ export default function User() {
   // save user
   const saveUser = async () => {
     closeModal();
+
+    // calling getValues from react-hook-form
     let modifiedUser = getValues();
 
     modifiedUser.id = state.id;
@@ -68,7 +75,7 @@ export default function User() {
     // make http put req
 
     let res = await axios.put(
-      `http://localhost:5555/users/${modifiedUser.id}`,
+      `http://localhost:4000/user-api/update/user/${modifiedUser.id}`,
       modifiedUser
     );
 
@@ -76,22 +83,29 @@ export default function User() {
     console.log(res);
 
     // setting the data to screen
+    console.log("res data paylaod: ", res.data.payload);
+    console.log("res data: ", res.data);
 
-    setModifyToScreen(res.data);
+    setModifyToScreen(modifiedUser);
+    goToUserList();
   };
 
   const [modifyToScreen, setModifyToScreen] = useState(state);
 
+  // navigate hook
   const navigate = useNavigate();
 
+  // go to list navigate
   const goToUserList = () => {
     navigate("/user-list");
   };
 
   const deleteUser = async (id) => {
-    let res = await axios.delete(`http://localhost:5555/users/${id}`);
+    let res = await axios.delete(
+      `http://localhost:4000/user-api/delete/user/${id}`
+    );
     console.log("Deleted object: ", res);
-    
+
     goToUserList();
   };
 

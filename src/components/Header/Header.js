@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 
+// importing header css
 import "./Header.css";
 
 // exporting header component

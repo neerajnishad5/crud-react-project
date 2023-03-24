@@ -1,25 +1,25 @@
 {
   "users": [
     {
-      "username": "nakash",
-      "email": "nakash@email.com",
-      "dob": "20011-02-02",
-      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
+      "username": "Akash",
+      "email": "akash@mail.com",
+      "dob": "2023-03-25",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDABOuR7flMri3DXk2TMd76dhYaoEkNBiZw&usqp=CAU",
+      "id": 1
+    },
+    {
+      "username": "Vikas",
+      "email": "vikas@email.com",
+      "dob": "2001-02-02",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDABOuR7flMri3DXk2TMd76dhYaoEkNBiZw&usqp=CAU",
+      "id": 2
+    },
+    {
+      "username": "Kumar",
+      "email": "kumar@email.com",
+      "dob": "2003-02-02",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDABOuR7flMri3DXk2TMd76dhYaoEkNBiZw&usqp=CAU",
       "id": 3
-    },
-    {
-      "username": "shreya",
-      "email": "shreya@mail.com",
-      "dob": "2002-02-02",
-      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
-      "id": 4
-    },
-    {
-      "username": "akashi",
-      "email": "akashi@mail.com",
-      "dob": "2002-02-02",
-      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
-      "id": 5
     }
   ]
 }

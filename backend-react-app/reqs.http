@@ -1,0 +1,42 @@
+# GET ALL USERS
+
+GET http://localhost:4000/user-api/users
+
+###
+
+# GET USER BY ID
+GET http://localhost:4000/user-api/user/1
+
+###
+
+# POST USER
+POST http://localhost:4000/user-api/register
+Content-Type: application/json
+
+{
+    "username": "bharti",
+    "email": "bharti@email.com",
+    "dob": "2022-06-26",
+    "imageUrl": "something"
+}
+
+
+###
+
+# UPDATE USER
+
+PUT http://localhost:4000/user-api/update/user/1
+Content-Type: application/json
+
+{
+    "username": "bharti",
+    "email": "bharti@email.com",
+    "dob": "2020-06-21"
+}
+
+###
+
+# DELETE USER BY ID
+DELETE http://localhost:4000/user-api/delete/2
+
+###

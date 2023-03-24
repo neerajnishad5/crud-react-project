@@ -14,8 +14,11 @@ import Home from "./components/Home/Home";
 import UserList from "./components/UserList/UserList";
 import User from "./components/User/User";
 
+
 // export App component
 export default function App() {
+ 
+
   const browserRouterObj = createBrowserRouter([
     {
       path: "/",
@@ -57,6 +60,8 @@ export default function App() {
     <div className="App">
       <div>
         <RouterProvider router={browserRouterObj}></RouterProvider>
+
+      
       </div>
     </div>
   );

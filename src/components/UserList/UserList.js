@@ -27,8 +27,6 @@ export default function UserList() {
     navigate(`/user/${user.id}`, { state: user });
   };
 
-  
-
   const dipslayData = () => {
     return (
       <div>
@@ -67,9 +65,11 @@ export default function UserList() {
     // if (getData === 0) {
     //   dipslayData();
     // }else
-    const userData = await axios.get("http://localhost:5555/users");
-    // 3(userData.data);
-    setData(userData.data);
+    const userData = await axios.get("http://localhost:4000/user-api/users");
+    // (userData.data);
+
+    // setData(userData.data); -> this is for setting data in front end
+    setData(userData.data.payload);
     // console.log("logging data", data);
   };
 
