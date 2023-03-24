@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "username": "nakash",
+      "email": "nakash@email.com",
+      "dob": "20011-02-02",
+      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
+      "id": 3
+    },
+    {
+      "username": "shreya",
+      "email": "shreya@mail.com",
+      "dob": "2002-02-02",
+      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
+      "id": 4
+    },
+    {
+      "username": "akashi",
+      "email": "akashi@mail.com",
+      "dob": "2002-02-02",
+      "imageUrl": " https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png",
+      "id": 5
+    }
+  ]
+}
